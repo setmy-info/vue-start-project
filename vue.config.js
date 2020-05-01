@@ -1,6 +1,6 @@
 // vue.config.js
 
-const path = require('path');
+const path = require('path')
 
 module.exports = {
 
@@ -22,7 +22,7 @@ module.exports = {
 
   configureWebpack: {
     resolve: {
-      //https://webpack.js.org/configuration/resolve/#resolve
+      // https://webpack.js.org/configuration/resolve/#resolve
       alias: {
         '@': path.resolve(__dirname, 'src'),
         '@views': path.resolve(__dirname, 'src/views'),

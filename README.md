@@ -15,6 +15,19 @@ yarn serve
 yarn build
 ```
 
+### Prepare package for deploy
+```
+yarn package
+```
+
+### Upload to SSH storage
+```
+export USER_NAME=ssh.user.name
+export HOST_NAME=remote.host.name
+export DESTINATION=/remote/host/sestination/folder
+yarn deploy
+```
+
 ### Run your unit tests
 ```
 yarn test:unit

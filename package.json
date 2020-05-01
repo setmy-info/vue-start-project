@@ -1,10 +1,12 @@
 {
     "name": "vue-start-project",
-    "version": "0.1.0",
+    "version": "1.0.0-SNAPSHOT",
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
+        "package": "rm -Rf $npm_package_name && mv dist $npm_package_name && tar cvzf ./$npm_package_name-$npm_package_version.tar.gz ./$npm_package_name",
+        "deploy": "scp $npm_package_name-$npm_package_version.tar.gz $USER_NAME@$HOST_NAME:$DESTINATION",
         "test:unit": "vue-cli-service test:unit",
         "test:e2e": "vue-cli-service test:e2e",
         "lint": "vue-cli-service lint"
