@@ -17,6 +17,7 @@ yarn build
 
 ### Prepare package for deploy
 ```
+yarn clear
 yarn package
 ```
 
