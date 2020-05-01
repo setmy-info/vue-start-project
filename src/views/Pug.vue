@@ -1,12 +1,18 @@
 <template lang="pug">
   .div(class="about pug")
-    .h1 This is an Pug Vue
+    .h1 {{text}}
 </template>
 
 <script>
+  import testService from '@services/testService'
 
   export default {
-    name: 'Pug'
+    name: 'Pug',
+    data: function () {
+      return {
+        text: testService.foo()
+      }
+    }
   }
 
 </script>

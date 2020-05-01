@@ -34,14 +34,6 @@ module.exports = {
         '@resources': path.resolve(__dirname, 'src/resources'),
         '@styles': path.resolve(__dirname, 'src/styles')
       }
-    },
-    module: {
-      rules: [
-        {
-          test: /\.pug$/,
-          use: ["pug-plain-loader"]
-        }
-      ]
     }
   }
 }
