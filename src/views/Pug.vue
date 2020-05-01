@@ -1,6 +1,6 @@
 <template lang="pug">
   .div(class="about pug")
-    .h1 {{text}}
+    .h1 {{text}}, {{person}}
 </template>
 
 <script>
