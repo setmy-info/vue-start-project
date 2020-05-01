@@ -1,9 +1,0 @@
-{
-  "name": "vuetify-webpack-advenced",
-  "description": "vuetify-webpack-advenced",
-  "dependencies": {
-    "servicejs": "version-1.0.33",
-    "servedjs": "version-1.0.7",
-    "axios": "^0.17.1"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "directory": "static/js/lib",
-  "proxy": "http://proxy.some.domain:8080",
-  "https-proxy":"http://proxy.some.domain:8080",
-  "no-proxy":"localhost, 127.0.0.1, 0.0.0.0"
-}
