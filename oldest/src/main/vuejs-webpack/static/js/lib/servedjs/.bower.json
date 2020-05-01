@@ -1,0 +1,42 @@
+{
+  "name": "servedjs",
+  "description": "Servicejs integrated tools.",
+  "main": [
+    "dist/servedjs.js"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "di",
+    "dependencies injection"
+  ],
+  "authors": [
+    "Imre Tabur <imre.tabur@eesti.ee>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main",
+    "src/test",
+    "target"
+  ],
+  "private": false,
+  "dependencies": {
+    "servicejs": "version-1.0.33"
+  },
+  "homepage": "https://github.com/Krabi/servedjs",
+  "_release": "version-1.0.7",
+  "_resolution": {
+    "type": "tag",
+    "tag": "version-1.0.7",
+    "commit": "3d624705b6a7ab48b9426e0191fdbfa0e52f36b6"
+  },
+  "_source": "https://github.com/Krabi/servedjs.git",
+  "_target": "version-1.0.7",
+  "_originalSource": "servedjs"
+}

@@ -1,0 +1,11 @@
+div.creditsView {
+    background: lightgray;
+}
+
+div.creditsView > span.label {
+    color: red;
+}
+
+div.creditsView > span.authors {
+    color: green;
+}

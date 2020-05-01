@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VueJS simplest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="app">
+            <router-view></router-view>
+        </div>
+        <!-- script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script -->
+        <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router@2.5.3/dist/vue-router.js"></script>
+        <script>
+            var root, foo, bar, foo2, bar2, routes, router, app;
+            root = {template: '<div>root</div>'};
+            foo = {template: '<div>foo</div>'};
+            bar = {template: '<div>bar</div>'};
+            foo2 = Vue.component('foo2', {
+                template: '#foo2'
+            });
+            bar2 = Vue.component('bar2', {
+                template: '#bar2'
+            });
+            routes = [
+                {path: '/', component: root},
+                {path: '/foo', component: foo},
+                {path: '/bar', component: bar},
+                {path: '/foo2', component: foo2},
+                {path: '/bar2', component: bar2},
+                {path: '*', redirect: '/'}
+            ];
+            router = new VueRouter({
+                routes: routes
+            });
+            app = new Vue({router: router}).$mount('#app');
+        </script>
+        <script type="text/x-template" id="foo2">
+            <div>foo2</div>
+        </script>
+        <script type="text/x-template" id="bar2">
+            <div>bar2</div>
+        </script>
+    </body>
+</html>

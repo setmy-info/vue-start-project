@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title VueJS simplest
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width', initial-scale='1.0')
+    body
+        div(id="app")
+            router-view
+        script(src='https://unpkg.com/vue@2.5.13/dist/vue.js')
+        script(src='https://unpkg.com/vue-router@3.0.1/dist/vue-router.js')
+        script
+            include script.js
+        script(type='text/x-template' id='foo2')
+            div foo2
+        script(type='text/x-template' id='bar2')
+            div bar2

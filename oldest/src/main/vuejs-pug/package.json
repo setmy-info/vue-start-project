@@ -1,0 +1,13 @@
+{
+  "name": "vuejs-pug",
+  "version": "1.0.0",
+  "description": "VueJs pug builder",
+  "scripts": {
+    "build": "node build.js > index.html && exit 0"
+  },
+  "author": "Imre Tabur",
+  "license": "MIT",
+  "devDependencies": {
+    "pug": "^2.0.0-rc.4"
+  }
+}

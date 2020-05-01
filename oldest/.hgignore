@@ -1,0 +1,43 @@
+# use glob syntax.
+syntax: glob
+node_modules
+selenium-debug.log
+nbproject
+.idea
+.vscode
+src/test/js/unit/coverage
+src/test/js/e2e/reports
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+target
+src/main/webapp/css/app.*.css
+src/main/webapp/index.html
+src/main/webapp/js/app.*.js
+src/main/webapp/js/app.*.js.map
+src/main/webapp/js/manifest.*.js
+src/main/webapp/js/manifest.*.js.map
+src/main/webapp/js/vendor.*.js
+src/main/webapp/js/vendor.*.js.map
+src/main/js/vue/dist/
+nb-configuration.xml
+src/main/js/vue/static/js/lib
+src/main/webapp/js/lib
+.bowerrc
+src/main/webapp
+src/main/vuejs/static/js/lib/
+src/main/vuetify-webpack/public/js/lib
+src/main/vuejs/dist
+src/main/vuetify-webpack-advanced/dist
+src/main/vuetify-webpack-advanced/static/js/lib/
+src/main/vuejs-webpack/static/js/lib/
+src/main/vuejs-webpack/dist/static/js/lib/
+src/main/vuejs-webpack/dist/
+
+# switch to regexp syntax.
+syntax: regexp
