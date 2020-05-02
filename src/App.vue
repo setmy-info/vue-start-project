@@ -32,3 +32,7 @@
     }
   }
 </style>
+
+<style lang="sass">
+  @import './styles/main.scss'
+</style>
