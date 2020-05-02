@@ -2,6 +2,7 @@
   .div(class="about pug")
     .h1 {{text}}
     .i(class="material-icons") face
+    .div {{money | inCurrency('EUR')}}
 </template>
 
 <script>
@@ -11,7 +12,8 @@ export default {
   name: 'Pug',
   data: function () {
     return {
-      text: testService.foo()
+      text: testService.foo(),
+      money: 1234
     }
   }
 }
