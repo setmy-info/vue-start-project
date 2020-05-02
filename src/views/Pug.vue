@@ -1,6 +1,7 @@
 <template lang="pug">
   .div(class="about pug")
     .h1 {{text}}
+    .i(class="material-icons") face
 </template>
 
 <script>
