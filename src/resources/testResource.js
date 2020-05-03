@@ -2,10 +2,10 @@ import resourceFactory from './resourceFactory'
 
 const testResource = {
 
-  axios: resourceFactory.axios,
+  axios: resourceFactory.newAxios(),
 
   bar: function () {
-    this.axios.get('rest/testResource/12345').catch(function (error) {
+    this.axios.get('/test.json').catch(function (error) {
       console.log('Had an error: ', error.config)
     })
   }

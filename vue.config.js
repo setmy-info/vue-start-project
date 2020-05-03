@@ -32,7 +32,8 @@ module.exports = {
         '@directives': path.resolve(__dirname, 'src/directives'),
         '@services': path.resolve(__dirname, 'src/services'),
         '@resources': path.resolve(__dirname, 'src/resources'),
-        '@styles': path.resolve(__dirname, 'src/styles')
+        '@styles': path.resolve(__dirname, 'src/styles'),
+        '@config': path.resolve(__dirname, 'src/config')
       }
     }
   }

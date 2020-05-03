@@ -11,6 +11,13 @@
 
 <style lang="less">
   @import './styles/main.less';
+</style>
+
+<style lang="sass">
+  @import './styles/main.scss'
+</style>
+
+<style lang="less">
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -31,8 +38,4 @@
       }
     }
   }
-</style>
-
-<style lang="sass">
-  @import './styles/main.scss'
 </style>

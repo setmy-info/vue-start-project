@@ -1,12 +1,24 @@
 import axios from 'axios'
+import config from '../config'
 
 const resourceFactory = {
 
   axios: null,
 
-  init: function () {
-    this.axios = axios.create()
-    this.axios.defaults.timeout = 2500
+  newAxios: function () {
+    const conf = {
+      baseURL: config.resources.jsonUrl,
+      timeout: config.resources.timeout,
+      headers: {
+        abc: 'def'
+      }
+    }
+    this.axios = axios.create(conf)
+    this.addInterceptors()
+    return this.axios
+  },
+
+  addInterceptors: function () {
     this.axios.interceptors.request.use(function (config) {
       console.log('Request interceptor')
       return config
@@ -21,14 +33,8 @@ const resourceFactory = {
       console.log('Response error interceptor')
       return Promise.reject(error)
     })
-  },
-
-  getAxios: function () {
-    return this.axios
   }
 }
-
-resourceFactory.init()
 
 window.resourceFactory = resourceFactory
 export default resourceFactory
