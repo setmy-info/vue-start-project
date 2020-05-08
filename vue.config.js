@@ -3,24 +3,26 @@
 const path = require('path')
 
 module.exports = {
-
+  lintOnSave: false,
   devServer: {
     // https://webpack.js.org/configuration/dev-server/
     host: '0.0.0.0',
-    port: 8443,
-    http2: true,
-    https: {
-      /*
+    port: 8080,
+    // port: 8443,
+    // http2: true,
+    // https: {
+    /*
       key: fs.readFileSync('/path/to/server.key'),
       cert: fs.readFileSync('/path/to/server.crt'),
       ca: fs.readFileSync('/path/to/ca.pem')
       */
-    },
+    // },
     disableHostCheck: true,
     compress: true
   },
 
   configureWebpack: {
+    devtool: false,
     resolve: {
       // https://webpack.js.org/configuration/resolve/#resolve
       alias: {

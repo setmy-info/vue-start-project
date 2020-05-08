@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# Copyright 2020 Imre Tabur <imre.tabur@eesti.ee>
+
 DEPLOY_FILE_NAME=.deploy
 
 if [ -f ./"${DEPLOY_FILE_NAME}" ]; then

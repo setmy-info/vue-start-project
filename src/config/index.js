@@ -3,6 +3,9 @@ const config = {
     restUrl: 'rest',
     jsonUrl: 'json',
     timeout: 2500
+  },
+  features: {
+    featureName: true
   }
 }
 

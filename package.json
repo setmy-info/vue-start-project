@@ -4,17 +4,21 @@
     "private": true,
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
+        "build": "yarn minify && yarn dobuild",
+        "dobuild": "vue-cli-service build",
         "package": "mv dist $npm_package_name && tar cvzf ./$npm_package_name-$npm_package_version.tar.gz ./$npm_package_name",
         "deploy": "./bin/deploy.sh",
         "dodeploy": "scp $npm_package_name-$npm_package_version.tar.gz $USER_NAME@$HOST_NAME:$DESTINATION",
         "test:unit": "vue-cli-service test:unit",
         "test:e2e": "vue-cli-service test:e2e",
         "lint": "vue-cli-service lint",
-        "clear": "rm -Rf $npm_package_name ./$npm_package_name-$npm_package_version.tar.gz"
+        "clear": "rm -Rf $npm_package_name ./$npm_package_name-*.tar.gz ./dist",
+        "minify": "echo uglifyjs -c -m -o ./public/js/main.min.js -- ./src/main/webapp/js/some.js ./src/main/webapp/js/another.js",
+        "append": "echo cat ./src/main/webapp/js/some.js > ./public/js/main.min.js && cat ./src/main/webapp/js/another.js >> ./public/js/main.min.js"
     },
     "dependencies": {
         "axios": "^0.19.2",
+        "uglify-js": "^3.9.2",
         "vue": "^2.6.11",
         "vue-router": "^3.1.6",
         "vuex": "^3.1.3"
