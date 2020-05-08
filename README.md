@@ -1,5 +1,20 @@
 # vue-start-project
 
+## Development setup
+```
+yarn prepare
+```
+
+## Make link to ODT documentation
+```
+ln -s DOCSFOLDER ./docs
+```
+
+## Build ODT
+```
+yarn odt
+```
+
 ## Project setup
 ```
 yarn install
