@@ -3,7 +3,9 @@
     "version": "0.5.0",
     "private": true,
     "scripts": {
+        "prepare": "./bin/prepare.sh",
         "serve": "vue-cli-service serve",
+        "odt": "./bin/docs.sh",
         "build": "yarn minify && yarn dobuild",
         "dobuild": "vue-cli-service build",
         "package": "mv dist $npm_package_name && tar cvzf ./$npm_package_name-$npm_package_version.tar.gz ./$npm_package_name",
@@ -51,6 +53,7 @@
         "pug-plain-loader": "^1.0.0",
         "sass": "^1.26.5",
         "sass-loader": "^8.0.2",
+        "showdown": "^1.9.1",
         "vue-template-compiler": "^2.6.11"
     }
 }
