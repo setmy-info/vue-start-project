@@ -15,6 +15,11 @@ ln -s DOCSFOLDER ./docs
 yarn odt
 ```
 
+## Build Version module
+```
+yarn ver
+```
+
 ## Project setup
 ```
 yarn install

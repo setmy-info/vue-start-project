@@ -6,7 +6,7 @@ const testResource = {
 
   bar: function () {
     this.axios.get('/test.json').catch(function (error) {
-      console.log('Had an error: ', error.config)
+      // console.log('Had an error: ', error.config)
     })
   }
 }

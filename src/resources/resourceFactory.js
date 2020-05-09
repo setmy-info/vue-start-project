@@ -20,17 +20,17 @@ const resourceFactory = {
 
   addInterceptors: function () {
     this.axios.interceptors.request.use(function (config) {
-      console.log('Request interceptor')
+      // console.log('Request interceptor')
       return config
     }, function (error) {
-      console.log('Request error interceptor')
+      // console.log('Request error interceptor')
       return Promise.reject(error)
     })
     this.axios.interceptors.response.use(function (response) {
-      console.log('Response interceptor')
+      // console.log('Response interceptor')
       return response
     }, function (error) {
-      console.log('Response error interceptor')
+      // console.log('Response error interceptor')
       return Promise.reject(error)
     })
   }

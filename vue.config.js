@@ -1,7 +1,6 @@
 // vue.config.js
 
 const path = require('path')
-const webpack = require('webpack')
 
 module.exports = {
   lintOnSave: false,
@@ -38,21 +37,6 @@ module.exports = {
         '@styles': path.resolve(__dirname, 'src/styles'),
         '@config': path.resolve(__dirname, 'src/config')
       }
-    },
-    plugins: [
-      new webpack.LoaderOptionsPlugin({
-        options: {
-          rules: [
-            /* {
-              test: /\.vue$/,
-              loader: 'vue-loader',
-              options: {
-                hotReload: false // disables Hot Reload
-              }
-            } */
-          ]
-        }
-      })
-    ]
+    }
   }
 }
