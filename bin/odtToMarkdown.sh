@@ -2,6 +2,10 @@
 
 # Copyright 2020 Imre Tabur <imre.tabur@eesti.ee>
 
-./tools/pandoc/bin/pandoc -f odt -t markdown -o ${2} ${1}
+FORMAT_OUT=markdown
+#FORMAT_OUT=commonmark
+#FORMAT_OUT=markdown_strict
+
+./tools/pandoc/bin/pandoc -f odt -t ${FORMAT_OUT} -o ${2} ${1}
 
 exit 0
