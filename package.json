@@ -8,7 +8,7 @@
         "odt": "./bin/docs.sh",
         "build": "yarn minify && yarn dobuild",
         "dobuild": "vue-cli-service build",
-        "package": "mv dist $npm_package_name && tar cvzf ./$npm_package_name-$npm_package_version.tar.gz ./$npm_package_name",
+        "package": "mv -f dist $npm_package_name && tar cvzf ./$npm_package_name-$npm_package_version.tar.gz ./$npm_package_name",
         "deploy": "./bin/deploy.sh",
         "dodeploy": "scp $npm_package_name-$npm_package_version.tar.gz $USER_NAME@$HOST_NAME:$DESTINATION",
         "test:unit": "vue-cli-service test:unit",
@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "axios": "^0.19.2",
+        "servedjs-geo": "1.1.0",
         "uglify-js": "^3.9.2",
         "vue": "^2.6.11",
         "vue-router": "^3.1.6",
