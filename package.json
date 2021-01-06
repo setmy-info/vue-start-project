@@ -20,7 +20,7 @@
         "append": "echo cat ./src/main/webapp/js/some.js > ./public/js/main.min.js && cat ./src/main/webapp/js/another.js >> ./public/js/main.min.js"
     },
     "dependencies": {
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "servedjs-geo": "1.1.0",
         "uglify-js": "^3.9.2",
         "vue": "^2.6.11",
