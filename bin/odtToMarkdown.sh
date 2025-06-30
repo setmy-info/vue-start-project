@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright 2020 Imre Tabur <imre.tabur@eesti.ee>
+# Copyright 2020 Imre Tabur <imre.tabur@mail.ee>
 
 FORMAT_OUT=markdown
 #FORMAT_OUT=commonmark

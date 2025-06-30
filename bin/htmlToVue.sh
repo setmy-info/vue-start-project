@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Copyright 2020 Imre Tabur <imre.tabur@eesti.ee>
+# Copyright 2020 Imre Tabur <imre.tabur@mail.ee>
 
 HTML_FILE_NAME=${1}
 VUE_FILE_NAME=${2}
